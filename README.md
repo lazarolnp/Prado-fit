@@ -9,7 +9,7 @@ Página estática (HTML + CSS + JS, sem build), responsiva e otimizada para celu
 index.html            página
 assets/css/style.css  estilos (paleta em variáveis no topo do arquivo)
 assets/js/main.js     link do checkout, animações e barra de compra no celular
-assets/img/           imagens (capa do PDF)
+assets/img/           capa e páginas exportadas do PDF original (JPG + WebP)
 ```
 
 ## Configurar o checkout da Cakto
@@ -23,17 +23,15 @@ const LINK_CHECKOUT_CAKTO = "https://pay.cakto.com.br/SEU-LINK-AQUI";
 Todos os botões de compra (classe `js-checkout`) passam a usar esse link.
 Enquanto o valor provisório estiver lá, os botões rolam até a seção da oferta.
 
-## Usar a capa original do PDF
+## Identidade visual
 
-Exporte a capa do PDF como imagem e salve em `assets/img/capa-prado-fit.jpg`
-(proporção A4, ex.: 1200 × 1697 px). Ela substitui automaticamente a capa
-desenhada em CSS no topo da página, no celular do mockup e no card da oferta.
+A capa (`capa-prado-fit`) e as páginas exibidas na seção "O que você recebe"
+foram exportadas do PDF original. As cores são as do PDF e ficam nas variáveis
+`:root` no início de `assets/css/style.css` (`--pf-green`, `--pf-teal`,
+`--pf-orange`, `--pf-blue`, `--pf-purple`, `--pf-coral`…).
 
-## Cores
-
-A paleta fica nas variáveis `:root` no início de `assets/css/style.css`
-(`--green-800` é a cor principal, `--cta` a cor dos botões de compra).
-Ajuste os valores para reproduzir exatamente as cores do PDF.
+O botão de compra usa o laranja do PDF em tom mais escuro (`--cta: #bb5814`)
+para garantir contraste legível com o texto branco.
 
 ## Publicar
 

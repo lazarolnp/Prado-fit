@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prado Fit — Guia de Emagrecimento de 30 Dias | R$ 14,90</title>
   <meta name="description" content="Prado Fit: guia digital prático de 30 dias para organizar refeições, planejar compras e acompanhar hábitos mais saudáveis, sem dietas extremas. Por apenas R$ 14,90.">
-  <meta name="theme-color" content="#0f5a43">
+  <meta name="theme-color" content="#1f6f5c">
   <meta property="og:type" content="product">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Prado Fit — Guia de Emagrecimento de 30 Dias">
   <meta property="og:description" content="Organize suas refeições, planeje suas compras e acompanhe seus hábitos durante 30 dias. Guia digital por R$ 14,90.">
   <meta property="og:image" content="assets/img/capa-prado-fit.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f5a43'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='900' font-size='30' fill='%23fff'%3EPF%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/img/capa-prado-fit.webp" type="image/webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6f5c'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='900' font-size='30' fill='%23fff'%3EPF%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -53,8 +54,7 @@
   <header class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="#topo" aria-label="Prado Fit — início">
-        <span class="brand__mark" aria-hidden="true"><svg><use href="#i-leaf"/></svg></span>
-        <span class="brand__name">PRADO <strong>FIT</strong></span>
+        <span class="brand__name">PRADO FIT</span><span class="brand__dot" aria-hidden="true"></span>
       </a>
       <a class="btn btn--sm js-checkout" href="#oferta">Comprar • R$ 14,90</a>
     </div>
@@ -64,7 +64,10 @@
 
     <!-- 1. HERO -->
     <section class="hero" id="topo">
-      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__bg" aria-hidden="true">
+        <span class="blob blob--mint"></span><span class="blob blob--sage"></span><span class="blob blob--sun"></span><span class="blob blob--peach"></span>
+        <span class="dot dot--o"></span><span class="dot dot--y"></span><span class="dot dot--g"></span><span class="dot dot--r"></span>
+      </div>
       <div class="container hero__grid">
         <div class="hero__copy">
           <span class="pill reveal">GUIA DIGITAL • 30 DIAS</span>
@@ -79,7 +82,7 @@
 
           <div class="cta-block reveal">
             <a class="btn btn--lg js-checkout" href="#oferta">
-              QUERO MEU GUIA POR <span class="nw">R$ 14,90</span>
+              <span>QUERO MEU GUIA POR <span class="nw">R$ 14,90</span></span>
               <svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
             </a>
             <p class="cta-note">
@@ -92,22 +95,11 @@
         <div class="hero__visual reveal" aria-hidden="false">
           <figure class="product" aria-label="Capa do guia Prado Fit">
             <div class="product__glow" aria-hidden="true"></div>
-            <!-- Para usar a capa original do PDF, salve a imagem em assets/img/capa-prado-fit.jpg -->
             <div class="cover cover--3d">
-              <img class="cover__img" src="assets/img/capa-prado-fit.jpg" alt="Capa do guia Prado Fit — Guia de Emagrecimento de 30 Dias" width="600" height="848" fetchpriority="high" onerror="this.remove()">
-              <div class="cover__art">
-                <div class="cover__top">
-                  <span class="cover__tag">GUIA DIGITAL</span>
-                  <span class="cover__days"><b>30</b>dias</span>
-                </div>
-                <div class="cover__brand">PRADO<br><span>FIT</span></div>
-                <div class="cover__line"></div>
-                <p class="cover__subtitle">Guia de Emagrecimento<br>de 30 Dias</p>
-                <div class="cover__plate" aria-hidden="true">
-                  <span class="q q1"></span><span class="q q2"></span><span class="q q3"></span>
-                </div>
-                <p class="cover__foot">Refeições • Compras • Hábitos</p>
-              </div>
+              <picture>
+                <source srcset="assets/img/capa-prado-fit.webp" type="image/webp">
+                <img src="assets/img/capa-prado-fit.jpg" alt="Capa do guia Prado Fit — Guia de Emagrecimento de 30 Dias" width="900" height="1273" fetchpriority="high">
+              </picture>
             </div>
             <div class="float-chip float-chip--a"><svg><use href="#i-book"/></svg>23 páginas</div>
             <div class="float-chip float-chip--b"><svg><use href="#i-check"/></svg>Desafio de 30 dias</div>
@@ -123,11 +115,11 @@
           <h2>Você sente que precisa se organizar melhor, mas não sabe por onde começar?</h2>
         </header>
         <div class="pain-grid">
-          <article class="pain reveal"><span class="ico"><svg><use href="#i-clock"/></svg></span><p>Você decide o que comer na última hora.</p></article>
-          <article class="pain reveal"><span class="ico"><svg><use href="#i-calendar"/></svg></span><p>Tem dificuldade para organizar as refeições da semana.</p></article>
-          <article class="pain reveal"><span class="ico"><svg><use href="#i-cart"/></svg></span><p>Vai ao mercado sem uma lista definida.</p></article>
-          <article class="pain reveal"><span class="ico"><svg><use href="#i-repeat"/></svg></span><p>Começa a mudar os hábitos, mas perde a consistência.</p></article>
-          <article class="pain reveal"><span class="ico"><svg><use href="#i-trend"/></svg></span><p>Gostaria de acompanhar seu progresso de uma forma mais organizada.</p></article>
+          <article class="pain pain--orange reveal"><span class="ico"><svg><use href="#i-clock"/></svg></span><p>Você decide o que comer na última hora.</p></article>
+          <article class="pain pain--teal reveal"><span class="ico"><svg><use href="#i-calendar"/></svg></span><p>Tem dificuldade para organizar as refeições da semana.</p></article>
+          <article class="pain pain--blue reveal"><span class="ico"><svg><use href="#i-cart"/></svg></span><p>Vai ao mercado sem uma lista definida.</p></article>
+          <article class="pain pain--purple reveal"><span class="ico"><svg><use href="#i-repeat"/></svg></span><p>Começa a mudar os hábitos, mas perde a consistência.</p></article>
+          <article class="pain pain--coral reveal"><span class="ico"><svg><use href="#i-trend"/></svg></span><p>Gostaria de acompanhar seu progresso de uma forma mais organizada.</p></article>
         </div>
         <blockquote class="callout reveal">
           <span class="ico ico--solid"><svg><use href="#i-leaf"/></svg></span>
@@ -145,17 +137,17 @@
           <p>O Prado Fit foi desenvolvido para ajudar você a construir uma rotina mais organizada e sustentável, com orientações claras e aplicáveis no dia a dia. <strong>Sem dietas extremas e sem promessas milagrosas</strong> — apenas um caminho prático para dar os primeiros passos.</p>
         </header>
         <ol class="modules" role="list">
-          <li class="module reveal"><span class="module__n">01</span><span class="ico"><svg><use href="#i-book"/></svg></span><h3>Entenda o básico</h3><p>Conheça princípios gerais do emagrecimento e escolhas alimentares mais conscientes.</p></li>
-          <li class="module reveal"><span class="module__n">02</span><span class="ico"><svg><use href="#i-plate"/></svg></span><h3>Monte seu prato</h3><p>Aprenda uma referência visual para combinar verduras, legumes, proteínas e outros alimentos.</p></li>
-          <li class="module reveal"><span class="module__n">03</span><span class="ico"><svg><use href="#i-calendar"/></svg></span><h3>Planeje suas refeições</h3><p>Organize combinações práticas para a semana.</p></li>
-          <li class="module reveal"><span class="module__n">04</span><span class="ico"><svg><use href="#i-cart"/></svg></span><h3>Lista de compras</h3><p>Organize os itens necessários e aproveite melhor os alimentos.</p></li>
-          <li class="module reveal"><span class="module__n">05</span><span class="ico"><svg><use href="#i-chef"/></svg></span><h3>Preparação prática</h3><p>Descubra maneiras de facilitar a rotina na cozinha.</p></li>
-          <li class="module reveal"><span class="module__n">06</span><span class="ico"><svg><use href="#i-drop"/></svg></span><h3>Água, sono e movimento</h3><p>Observe hábitos importantes para o bem-estar.</p></li>
-          <li class="module reveal"><span class="module__n">07</span><span class="ico"><svg><use href="#i-heart"/></svg></span><h3>Consistência sem culpa</h3><p>Aprenda a lidar com imprevistos e evitar estratégias extremas.</p></li>
-          <li class="module reveal"><span class="module__n">08</span><span class="ico"><svg><use href="#i-flag"/></svg></span><h3>Desafio de 30 dias</h3><p>Acompanhe sua rotina e revise seus hábitos semanalmente.</p></li>
+          <li class="module module--teal reveal"><span class="module__n">01</span><span class="ico"><svg><use href="#i-book"/></svg></span><h3>Entenda o básico</h3><p>Conheça princípios gerais do emagrecimento e escolhas alimentares mais conscientes.</p></li>
+          <li class="module module--green reveal"><span class="module__n">02</span><span class="ico"><svg><use href="#i-plate"/></svg></span><h3>Monte seu prato</h3><p>Aprenda uma referência visual para combinar verduras, legumes, proteínas e outros alimentos.</p></li>
+          <li class="module module--orange reveal"><span class="module__n">03</span><span class="ico"><svg><use href="#i-calendar"/></svg></span><h3>Planeje suas refeições</h3><p>Organize combinações práticas para a semana.</p></li>
+          <li class="module module--blue reveal"><span class="module__n">04</span><span class="ico"><svg><use href="#i-cart"/></svg></span><h3>Lista de compras</h3><p>Organize os itens necessários e aproveite melhor os alimentos.</p></li>
+          <li class="module module--purple reveal"><span class="module__n">05</span><span class="ico"><svg><use href="#i-chef"/></svg></span><h3>Preparação prática</h3><p>Descubra maneiras de facilitar a rotina na cozinha.</p></li>
+          <li class="module module--teal reveal"><span class="module__n">06</span><span class="ico"><svg><use href="#i-drop"/></svg></span><h3>Água, sono e movimento</h3><p>Observe hábitos importantes para o bem-estar.</p></li>
+          <li class="module module--coral reveal"><span class="module__n">07</span><span class="ico"><svg><use href="#i-heart"/></svg></span><h3>Consistência sem culpa</h3><p>Aprenda a lidar com imprevistos e evitar estratégias extremas.</p></li>
+          <li class="module module--dark reveal"><span class="module__n">08</span><span class="ico"><svg><use href="#i-flag"/></svg></span><h3>Desafio de 30 dias</h3><p>Acompanhe sua rotina e revise seus hábitos semanalmente.</p></li>
         </ol>
         <div class="center reveal">
-          <a class="btn btn--lg js-checkout" href="#oferta">QUERO MEU GUIA POR <span class="nw">R$ 14,90</span><svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--lg js-checkout" href="#oferta"><span>QUERO MEU GUIA POR <span class="nw">R$ 14,90</span></span><svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </section>
@@ -171,42 +163,10 @@
         <div class="deliver">
           <!-- Mockup: tablet + celular + folhas -->
           <div class="mockups reveal" aria-hidden="true">
-            <div class="sheet sheet--1">
-              <div class="sheet__h">Lista de compras</div>
-              <div class="sheet__cols">
-                <div><i class="t"></i><i></i><i></i><i></i></div>
-                <div><i class="t"></i><i></i><i></i><i></i></div>
-              </div>
-            </div>
-            <div class="sheet sheet--2">
-              <div class="sheet__h">Registro de hábitos</div>
-              <div class="dots"><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
-            </div>
-            <div class="tablet">
-              <div class="tablet__screen">
-                <div class="planner">
-                  <div class="planner__h"><span>Planejamento semanal</span><b>PRADO FIT</b></div>
-                  <div class="planner__grid">
-                    <span class="d">Seg</span><span class="d">Ter</span><span class="d">Qua</span><span class="d">Qui</span><span class="d">Sex</span>
-                    <i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c1"></i><i class="c2"></i>
-                    <i class="c2"></i><i class="c3"></i><i class="c1"></i><i class="c2"></i><i class="c3"></i>
-                    <i class="c3"></i><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c1"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="phone">
-              <div class="phone__screen">
-                <div class="cover cover--mini">
-                  <img class="cover__img" src="assets/img/capa-prado-fit.jpg" alt="" loading="lazy" onerror="this.remove()">
-                  <div class="cover__art">
-                    <div class="cover__brand">PRADO<br><span>FIT</span></div>
-                    <div class="cover__line"></div>
-                    <p class="cover__subtitle">Guia de 30 dias</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="sheet sheet--1"><picture><source srcset="assets/img/pagina-lista-de-compras.webp" type="image/webp"><img src="assets/img/pagina-lista-de-compras.jpg" alt="" width="700" height="989" loading="lazy"></picture></div>
+            <div class="sheet sheet--2"><picture><source srcset="assets/img/pagina-registro-de-habitos.webp" type="image/webp"><img src="assets/img/pagina-registro-de-habitos.jpg" alt="" width="700" height="989" loading="lazy"></picture></div>
+            <div class="tablet"><div class="tablet__screen"><picture><source srcset="assets/img/pagina-planejamento-semanal.webp" type="image/webp"><img src="assets/img/pagina-planejamento-semanal.jpg" alt="" width="700" height="989" loading="lazy"></picture></div></div>
+            <div class="phone"><div class="phone__screen"><picture><source srcset="assets/img/capa-prado-fit.webp" type="image/webp"><img src="assets/img/capa-prado-fit.jpg" alt="" width="900" height="1273" loading="lazy"></picture></div></div>
           </div>
 
           <ul class="deliver__list" role="list">
@@ -219,6 +179,18 @@
             <li class="reveal"><span class="ico"><svg><use href="#i-grid"/></svg></span><div><strong>Planilha digital complementar</strong><span>Conforme disponibilizada no pacote.</span></div></li>
           </ul>
         </div>
+
+        <div class="preview">
+          <h3 class="preview__title reveal">Uma prévia do material por dentro</h3>
+          <div class="preview__track" tabindex="0" aria-label="Páginas do guia Prado Fit (role para o lado)">
+            <figure class="page reveal"><picture><source srcset="assets/img/pagina-monte-seu-prato.webp" type="image/webp"><img src="assets/img/pagina-monte-seu-prato.jpg" alt="Página do guia: como o emagrecimento funciona e o modelo do prato" width="700" height="989" loading="lazy"></picture><figcaption>Monte seu prato</figcaption></figure>
+            <figure class="page reveal"><picture><source srcset="assets/img/pagina-desafio-30-dias.webp" type="image/webp"><img src="assets/img/pagina-desafio-30-dias.jpg" alt="Página do guia: calendário do desafio de 30 dias" width="700" height="989" loading="lazy"></picture><figcaption>Desafio de 30 dias</figcaption></figure>
+            <figure class="page reveal"><picture><source srcset="assets/img/pagina-planejamento-semanal.webp" type="image/webp"><img src="assets/img/pagina-planejamento-semanal.jpg" alt="Folha prática: planejamento semanal de refeições" width="700" height="989" loading="lazy"></picture><figcaption>Planejamento semanal</figcaption></figure>
+            <figure class="page reveal"><picture><source srcset="assets/img/pagina-lista-de-compras.webp" type="image/webp"><img src="assets/img/pagina-lista-de-compras.jpg" alt="Folha prática: lista de compras por categorias" width="700" height="989" loading="lazy"></picture><figcaption>Lista de compras</figcaption></figure>
+            <figure class="page reveal"><picture><source srcset="assets/img/pagina-registro-de-habitos.webp" type="image/webp"><img src="assets/img/pagina-registro-de-habitos.jpg" alt="Folha prática: registro de hábitos da semana" width="700" height="989" loading="lazy"></picture><figcaption>Registro de hábitos</figcaption></figure>
+            <figure class="page reveal"><picture><source srcset="assets/img/pagina-acompanhamento.webp" type="image/webp"><img src="assets/img/pagina-acompanhamento.jpg" alt="Folha prática: acompanhamento de medidas e bem-estar" width="700" height="989" loading="lazy"></picture><figcaption>Acompanhamento</figcaption></figure>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -229,10 +201,10 @@
           <h2>Menos improviso. Mais organização. Um passo de cada vez.</h2>
         </header>
         <div class="benefits">
-          <article class="benefit reveal"><span class="ico ico--solid"><svg><use href="#i-bolt"/></svg></span><h3>Praticidade</h3><p>Tenha referências para organizar sua semana.</p></article>
-          <article class="benefit reveal"><span class="ico ico--solid"><svg><use href="#i-list"/></svg></span><h3>Planejamento</h3><p>Saiba o que pretende preparar e comprar.</p></article>
-          <article class="benefit reveal"><span class="ico ico--solid"><svg><use href="#i-sliders"/></svg></span><h3>Flexibilidade</h3><p>Adapte as sugestões à sua rotina, preferências e orçamento.</p></article>
-          <article class="benefit reveal"><span class="ico ico--solid"><svg><use href="#i-repeat"/></svg></span><h3>Consistência</h3><p>Acompanhe seus hábitos sem exigir perfeição.</p></article>
+          <article class="benefit benefit--orange reveal"><span class="ico ico--solid"><svg><use href="#i-bolt"/></svg></span><h3>Praticidade</h3><p>Tenha referências para organizar sua semana.</p></article>
+          <article class="benefit benefit--blue reveal"><span class="ico ico--solid"><svg><use href="#i-list"/></svg></span><h3>Planejamento</h3><p>Saiba o que pretende preparar e comprar.</p></article>
+          <article class="benefit benefit--purple reveal"><span class="ico ico--solid"><svg><use href="#i-sliders"/></svg></span><h3>Flexibilidade</h3><p>Adapte as sugestões à sua rotina, preferências e orçamento.</p></article>
+          <article class="benefit benefit--coral reveal"><span class="ico ico--solid"><svg><use href="#i-repeat"/></svg></span><h3>Consistência</h3><p>Acompanhe seus hábitos sem exigir perfeição.</p></article>
         </div>
       </div>
     </section>
@@ -246,13 +218,7 @@
         <div class="offer-card reveal">
           <div class="offer-card__visual" aria-hidden="true">
             <div class="cover cover--offer">
-              <img class="cover__img" src="assets/img/capa-prado-fit.jpg" alt="" loading="lazy" onerror="this.remove()">
-              <div class="cover__art">
-                <div class="cover__top"><span class="cover__tag">GUIA DIGITAL</span><span class="cover__days"><b>30</b>dias</span></div>
-                <div class="cover__brand">PRADO<br><span>FIT</span></div>
-                <div class="cover__line"></div>
-                <p class="cover__subtitle">Guia de Emagrecimento<br>de 30 Dias</p>
-              </div>
+              <picture><source srcset="assets/img/capa-prado-fit.webp" type="image/webp"><img src="assets/img/capa-prado-fit.jpg" alt="" width="900" height="1273" loading="lazy"></picture>
             </div>
           </div>
           <div class="offer-card__body">
@@ -267,7 +233,6 @@
             <div class="price" aria-label="Preço: R$ 14,90">
               <span class="price__cur" aria-hidden="true">R$</span>
               <span class="price__val" aria-hidden="true">14,90</span>
-              <span class="price__tag" aria-hidden="true">pagamento único</span>
             </div>
             <p class="offer-card__text">Um investimento acessível para começar a organizar sua rotina e dar os primeiros passos em direção a hábitos mais saudáveis.</p>
             <a class="btn btn--lg btn--block js-checkout" href="#oferta">QUERO ACESSAR O PRADO FIT<svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
@@ -314,7 +279,7 @@
       <div class="container final__inner reveal">
         <h2>Seu próximo passo pode ser mais simples do que você imagina.</h2>
         <p>Comece com um plano prático, organize sua rotina e acompanhe seus hábitos durante 30 dias. Faça do Prado Fit seu ponto de partida.</p>
-        <a class="btn btn--lg btn--light-ring js-checkout" href="#oferta">QUERO MEU PRADO FIT POR <span class="nw">R$ 14,90</span><svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--lg btn--light-ring js-checkout" href="#oferta"><span>QUERO MEU PRADO FIT POR <span class="nw">R$ 14,90</span></span><svg class="btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         <p class="final__note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Pagamento seguro via Cakto • Produto digital</p>
       </div>
     </section>
@@ -322,7 +287,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer__disclaimer"><strong>Aviso:</strong> o Prado Fit é um material de caráter educativo e informativo. Não substitui a avaliação e o acompanhamento individual com nutricionista ou médico. Os resultados variam de pessoa para pessoa.</p>
+      <p class="footer__disclaimer"><strong>Aviso:</strong> o Prado Fit é um material educativo. Não substitui o acompanhamento individual com nutricionista ou médico e não garante resultados específicos. Os resultados variam de pessoa para pessoa.</p>
       <p class="footer__copy">© <span id="ano">2026</span> Prado Fit. Todos os direitos reservados.</p>
     </div>
   </footer>
