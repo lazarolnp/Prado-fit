@@ -3,7 +3,7 @@
    Substitua o valor abaixo pelo link real do checkout da Cakto.
    Todos os botões de compra (.js-checkout) usam este link.
    ========================================================== */
-const LINK_CHECKOUT_CAKTO = "https://pay.cakto.com.br/SEU-LINK-AQUI";
+const LINK_CHECKOUT_CAKTO = "https://pay.cakto.com.br/cja9e9b_1202856";
 
 (function () {
   "use strict";
@@ -15,6 +15,8 @@ const LINK_CHECKOUT_CAKTO = "https://pay.cakto.com.br/SEU-LINK-AQUI";
     if (linkConfigurado) {
       btn.setAttribute("href", LINK_CHECKOUT_CAKTO);
       btn.setAttribute("rel", "noopener");
+      // Dentro de um iframe (ex.: pré-visualização), abre o checkout em nova aba.
+      if (window.self !== window.top) btn.setAttribute("target", "_blank");
     }
   });
 
